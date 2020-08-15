@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>project site</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+         
+        <a class="navbar-brand" href="">
+            <img src="image/logo.jpg" class="img-thumbnail" width="150" alt="">
+        </a>
+        <button class="navbar-toggler" data-target="#nav" data-toggle="collapse">
+            <span class="navbar-toggler-icon">
+
+            </span>
+        </button>
+        
+      <div class="collapse navbar-collapse"id="nav"> 
+        <ul  class="navbar-nav ml-auto">
+            <li class="nav-items">
+                <a class="nav-link text-white" href="#">Home
+
+                </a>
+            </li>
+            
+            <li class="nav-items">
+                <a class="nav-link" href="about.html" >About US</a>
+            </li>
+            <li class="nav-items">
+                <a class="nav-link" href="contact .html"> Contact Us
+
+                </a>
+            </li>
+            <li class="nav-items">
+                <a class="nav-link" href="">Services
+
+                </a>
+            </li>
+        </ul>
+        
+            
+        </div>
+    </div>
+    <div class="my-2"> 
+    <button class="btn btn-success"  data-target="#Login" data-toggle="modal" > Signup</button>
+    <button class="btn btn-success" data-target="#Signin" data-toggle="modal">Signin</button>
+</div>
+
+    </nav>
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+
+        <div class="carousel-inner">
+            <div class="carousel-caption py-5 mx-auto"  >
+                <h1 class="display-2 text-primary">KS MODULAR KICTENS&WARDBOES</h1>
+                <h2>we design home by your dreams</h2>
+                <button class="btn btn-success" >view more</button>
+                <button class="btn  btn-success">get stated</button>
+            </div>
+          <div class="carousel-item active">  
+            <img class="d-block w-100" src="web/1.jpg" height=450 alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="web/2.jpg" height=450 alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="web/3.jpg" height=450 alt="Third slide">
+          </div>
+
+          <div class="carousel-item">
+            <img class="d-block w-100" src="web/4.jpg" height=450 alt="fourth slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="web/5.jpg" height=450 alt="fifth slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="web/6.jpg" height=450 alt="six slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+    <div class="modal fade " id="Login">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Login</h3>
+                    <button class="close" data-dismiss="modal" >&times;</button>
+                </div>
+                <div class="modal-body">
+
+
+
+
+                    
+<!-- 
+                    <div class="jumbotron"> -->
+                       
+                            <form class="m mx-auto py-5 mx-4 needs-validation" novalidate >
+                                <div class="container bg-white py-5">
+                                <div class="row">
+                                    <div class="col">
+                                
+                            <label for="firstname">username</label>
+                            <span class="input-group addon" >
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                           
+                     </span>
+                         <input type="text" id="firstname" class="form-control"required >
+                    
+                        <div class="innvalid feedback">please enter name</div>
+                        
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                           <label for="pass">password</label>
+                           <span class="input-group addon" id="addon-wrapping">
+                           <i class="fa fa-user" aria-hidden="true"></i>
+                           
+                            </span>
+     
+                       <input type="password" id="pass" class="form-control" required>
+                        <div class="invalid feedback">password contains</div>
+                        </div> 
+                       </div>
+                         </div>
+                         <div class="from-group">
+                             <label for="email">email-id</label>
+                             <input type="email" id="pass" class="form-control" required>
+                         </div>
+                    
+                        <div class="form-group">
+                        <label for="gender">Gender</label>
+                        <!-- <select class="form-control" id="gender">
+                            <option value="m">Male</option>
+                            <option value="f">female</option>
+                        </select> -->
+                        <!-- </div> -->
+                    
+                           <div class="form-check form-check-inline">
+                        <input type="radio"  id="m" name="n"class="form-check-input" >
+                        <label class="form-check-label" for="m">Male</label>
+                    </div>
+                    
+                    <div class="form-check form-check-inline">
+                        <input type="radio" id="f" name="n" class="form-check-input">
+                        <label  class="form-check-label" for="f" >Female</label>
+                    </div>
+                    
+                    
+                    <div class="form-check">
+                    <input type="checkbox" id="" class="form-check-input">
+                    <label for="" class="form-check-label">Remember Me</label>
+                    </div>
+                    
+                       
+                            <button type="submit" class="btn btn-success btn-lg"> submit</button>
+                            <button class="btn btn-primary" data-dismiss="modal">close</button>
+                    
+                    </div>
+                    
+                   
+
+                         
+                        </form>
+                       
+                    </div>
+                   
+                    
+                     
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="Signin">
+        <div class="modal-dialog" modal-sm>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Signin</h2>
+                    <button class="close" data-dismiss="modal">&times</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <label for="email">email</label>
+                        <input type="email" id="email" class="form-control" required>
+                        <label for="pass">password</label>
+                        <input type="pass" id="password" class="form-control" required>
+                        <button class="btn btn-success">Submit</button>
+                        <button class="btn btn-primary" data-dismiss="modal">close</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+  
+ <div class="jumbotron m-5 bg-success "> 
+    <div class="container">
+        <h2 class=" text-center text-primary my-3 font-weight-bold"> features</h2>
+        <div class="row">
+
+            <div class="col-sm my-4 " >
+<div class="card my-2 ml-4 bg-warning" style="width:18rem;">
+<div class="card-body">
+    <img src="image/f1.jpg" class="rounded-circle w-25" class="img-thumbnail mx-auto" width="100" class="card-img-top" alt="">
+    <p class="card-text">
+      False ceilings, also known as suspended ceilings, differ from standard ceilings as they hang closer to the ground beneath the original ceiling structure. There is usually a hollow space between the original ceiling and 
+        the false ceiling, which can be useful for sound proofing apartments in the same building. </p>
+</div>
+</div>
+            </div>
+
+            <div class="col-sm my-4 ">
+                <div class="card my-2 ml-4 bg-warning " style="width:18rem;">
+                <div class="card-body">
+                    <img  src="image/hall1.jpg" class="rounded-circle w-25"  class="img-thumbnail mx-auto" width="100" class="card-img-top" alt="">
+                    <p class="card-text">
+                      A modular kitchen is simply a modern and flexible way to design your kitchen, allowing you to choose a variety of cabinets for different functions which come in “modules.” The modules are available in different sizes which can suit various functions depending on which area of the kitchen you would choose to use the ...sequi vero?</p>
+                </div>
+                </div>
+
+        </div>
+
+        <div class="col-sm my-4 ">
+            <div class="card my-2 ml-4 bg-warning"style="width:18rem;" >
+            <div class="card-body">
+                <img class="rounded-circle" src="image/K11.jpg" class="img-thumbnail mx-auto" width="80" class="card-img-top" alt="">
+                <p class="card-text">
+                  Aikaa Designs. A wooden crockery unit that partitions the living and the dining room is functional as well. While one side with cabinets and shelves serves as a crockery unit, the other side facing the living room becomes the TV unit or a place to display décor accessories</p>
+            </div>
+            </div>
+
+
+
+    </div>
+</div>
+
+</div>
+    </div>
+    <!-- Footer -->
+<footer class="page-footer font-small bg-dark text-white">
+
+    
+      <div class="container">
+  
+        <!-- Grid row-->
+        <div class="row py-4 d-flex align-items-center">
+  
+          <!-- Grid column -->
+          <div class=" col-sm col-md-6col-lg-5 text-center text-md-left mb-4 mb-md-0">
+            <h6 class="mb-0">Get connected with us on social networks!</h6>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class=" col-sm col-md-6 col-lg-5 text-center text-md-right">
+  
+            <!-- Facebook -->
+            <a class="fb-ic">
+              <i class="fab fa-facebook-f white-text mr-4"> </i>
+            </a>
+            <!-- Twitter -->
+            <a class="tw-ic">
+              <i class="fab fa-twitter white-text mr-4"> </i>
+            </a>
+            <!-- Google +-->
+            <a class="gplus-ic">
+              <i class="fab fa-google-plus-g white-text mr-4"> </i>
+            </a>
+            <!--Linkedin -->
+            <a class="li-ic">
+              <i class="fab fa-linkedin-in white-text mr-4"> </i>
+            </a>
+            <!--Instagram-->
+            <a class="ins-ic">
+              <i class="fab fa-instagram white-text"> </i>
+            </a>
+  
+          </div>
+          <!-- Grid column -->
+  
+        </div>
+        <!-- Grid row-->
+  
+      </div>
+    </div>
+  
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left mt-5">
+  
+      <!-- Grid row -->
+      <div class="row mt-3">
+  
+        <!-- Grid column -->
+        <div class="col-sm-3 col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+  
+          <!-- Content -->
+          <h6 class="text-uppercase font-weight-bold">KS MODULAR KICTHENS & WARDBOES</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>Interior design is the art and science of enhancing the interior of a building to achieve a healthier and more aesthetically pleasing environment for the people using the space. An interior designer is someone who plans, researches, coordinates, and manages such enhancement projects. Interior design is a multifaceted profession that includes conceptual development, space planning, site inspections, programming, research, communicating with the stakeholders of a project, construction management, and execution of the design.</p>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-sm-3  col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+  
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold text-white">Products</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <a href="#!" class="text-white">Wardboes</a>
+          </p>
+          <p>
+            <a href="#!" class="text-white">modular kitchens</a>
+          </p>
+          <p>
+            <a href="#!" class="text-white">tv unit</a>
+          </p>
+          <p>
+            <a href="#!" class="text-white">Hall Partation</a>
+          </p>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-sm-3 col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 ">
+  
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <a href="#!"></a>
+          </p>
+          <p>
+            <a href="#!" class="text-white">Facebook</a>
+          </p>
+          <p>
+            <a href="#!" class="text-white">Instagram</a>
+          </p>
+          <p>
+            <a href="#!" class="text-white">Google</a>
+          </p>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class=" col-sm-3 col-md-3 col-lg-2 col-xl-2 mx-auto mb-md-0 mb-4">
+  
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Contact</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <i class="fas fa-home mr-3"></i>Journalist Colony,Nizampet,Hyderabad,Telegana 500090,India</p>
+          <p>
+            <i class="fas fa-envelope mr-3"></i> Tejeswari955o@gmail.com</p>
+          <p>
+            <i class="fas fa-phone mr-3"></i> + 91 7680936309</p>
+          <p>
+            <i class="fas fa-print mr-3"></i> + 91 9553838265</p>
+  
+        </div>
+        <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row -->
+  
+    </div>
+    <!-- Footer Links -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center  py-3">© 2020 Copyright:
+      <a href="https://mdbootstrap.com/" class=" text-white"> MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
